@@ -25,7 +25,7 @@ const Projekte = [
      Seitenwechsel erhalten. Die App verfügt über einen nutzerbasierten
      Login, der mit einem Backend verbunden ist. Papaparse, Vue-Axios und
      Vue-Router werden für die Entwicklung verwendet.`,
-    "../Csv.png",
+    "../Csv.avif",
     "https://csv2.netlify.app",
     [
       {
