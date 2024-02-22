@@ -3,7 +3,7 @@
     <h1>INFORMATIONSTECHNISCHEN ASSISTENTEN</h1>
     <div class="rapper-Alle-infos">
       <div class="img-rapper">
-        <img src="../ITA_2009_000.jpg" />
+        <img  />
       </div>
 
       <div class="info-rapper">
