@@ -7,23 +7,25 @@
       </div>
 
       <div class="info-rapper">
-        <h3>Beschreibung</h3>
-        <p class="Beschreibung">
-          In der Ausbildung zum INFORMATIONSTECHNISCHEN ASSISTENTEN (ITA) werden
-          verschiedene Fächer unterrichtet, darunter Mathematik, Deutsch,
-          Englisch, Physik, Wirtschaft, Sport, Religion, Politik,
-          Elektrotechnik, Software (SO), Internet-Technologie (DIT),
-          Betriebssysteme Netzwerke (BSN), Datenbanken sowie Rechen- und
-          Systemtechnik (RST). Im Fach SO werden die Grundlagen von C#
-          vermittelt, einschließlich der Anwendung von Windows Forms. In
-          Datenbanken werden die Grundlagen von PHP und SQL gelehrt. In den
-          Fächern RST und BSN werden die Grundlagen von Linux und Netzwerken
-          vermittelt. Im Fach DIT werden HTML, CSS und Javascript unterrichtet.
-          Elektrotechnik umfasst Themen bis hin zur Motorentechnik, und SPS
-          (Speicherprogrammierbare Steuerungen) werden ebenfalls behandelt. Alle
-          anderen Fächer entsprechen dem Standard eines normalen Abiturs.
-        </p>
-
+        <div class="Beschreibung">
+          <h3>Beschreibung</h3>
+          <p>
+            In der Ausbildung zum INFORMATIONSTECHNISCHEN ASSISTENTEN (ITA)
+            werden verschiedene Fächer unterrichtet, darunter Mathematik,
+            Deutsch, Englisch, Physik, Wirtschaft, Sport, Religion, Politik,
+            Elektrotechnik, Software (SO), Internet-Technologie (DIT),
+            Betriebssysteme Netzwerke (BSN), Datenbanken sowie Rechen- und
+            Systemtechnik (RST). Im Fach SO werden die Grundlagen von C#
+            vermittelt, einschließlich der Anwendung von Windows Forms. In
+            Datenbanken werden die Grundlagen von PHP und SQL gelehrt. In den
+            Fächern RST und BSN werden die Grundlagen von Linux und Netzwerken
+            vermittelt. Im Fach DIT werden HTML, CSS und Javascript
+            unterrichtet. Elektrotechnik umfasst Themen bis hin zur
+            Motorentechnik, und SPS (Speicherprogrammierbare Steuerungen) werden
+            ebenfalls behandelt. Alle anderen Fächer entsprechen dem Standard
+            eines normalen Abiturs.
+          </p>
+        </div>
         <div
           style="
             display: flex;

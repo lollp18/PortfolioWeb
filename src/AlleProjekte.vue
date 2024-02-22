@@ -24,11 +24,9 @@ const Projekte = [
      gesteuert im Footer. Header und IDs bleiben beim Scrollen oder
      Seitenwechsel erhalten. Die App verfügt über einen nutzerbasierten
      Login, der mit einem Backend verbunden ist. Papaparse, Vue-Axios und
-     Vue-Router werden für die Entwicklung verwendet. Das Projekt
-     befindet sich noch in der Entwicklung und kann persönlich
-     präsentiert werden.`,
+     Vue-Router werden für die Entwicklung verwendet.`,
     "../Csv.png",
-    "#",
+    "https://csv2.netlify.app",
     [
       {
         titel: "Frontend",
