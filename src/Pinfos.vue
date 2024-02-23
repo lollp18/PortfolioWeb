@@ -1,3 +1,8 @@
+<script setup>
+function SetImg(Img) {
+  return new URL(`./assets/${Img}`, import.meta.url).href
+}
+</script>
 <template>
   <section class="Projekt-continer kontakdaten">
     <h1 style="margin: 0">Kontaktdaten & about</h1>
@@ -11,7 +16,7 @@
       ">
       <img
         style="border-radius: 50px"
-        src="../Profilbild.png" />
+        :src="SetImg('Profilbild.png')" />
 
       <div
         style="
@@ -207,7 +212,7 @@ c0.39062-0.39062,1.02344-0.39062,1.41406,0s0.39062,1.02344,0,1.41406l-25,25C19.5
 
 @import './style.sass'
 .kontakdaten
-  background: url(../Kontakdaten-bg.svg) no-repeat center
+  background: url(./assets/Kontakdaten-bg.svg) no-repeat center
   background-size: cover
   color: #fff
   margin-bottom: 2rem

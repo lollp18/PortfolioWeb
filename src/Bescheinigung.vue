@@ -1,4 +1,8 @@
-<script></script>
+<script setup>
+function SetImg(Img) {
+  return new URL(`./assets/${Img}`, import.meta.url).href
+}
+</script>
 <template lang="">
   <section class="Bescheinigingen ITA-bg">
     <h1>Bescheinigungen</h1>
@@ -14,15 +18,20 @@
         style="font-size: 1.5rem"
         target="_blank"
         class="AppLink"
-        href="../The Complete JavaScript Course 2022 From Zero to Expert!.pdf"
-        >The Complete JavaScript Course 2022 From Zero to Expert!</a
-      >
+        :href="
+          SetImg('The Complete JavaScript Course 2022 From Zero to Expert!.pdf')
+        "
+        >The Complete JavaScript Course 2022 From Zero to Expert!</a>
 
       <a
         style="font-size: 1.5rem"
         target="_blank"
         class="AppLink"
-        href="../Build Responsive Real-World Websites with HTML and CSS abschlussbescheinigung.pdf"
+        :href="
+          SetImg(
+            'Build Responsive Real-World Websites with HTML and CSS abschlussbescheinigung.pdf'
+          )
+        "
         >Build Responsive Real-World Websites with HTML and CSS
       </a>
     </div>
@@ -42,7 +51,4 @@
   border-bottom: 1px solid $SecondaryColor
   background-color: $MainColor
   padding: 1.5rem
-
-
-  
 </style>

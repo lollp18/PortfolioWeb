@@ -9,7 +9,9 @@ class Projekt {
     this.Technologien = Technologien
   }
 }
-
+function SetImg(Img) {
+  return new URL(`./assets/${Img}`, import.meta.url).href
+}
 const Projekte = [
   new Projekt(
     "Aktuelles Projekt CSV Fullstack App",
@@ -25,7 +27,7 @@ const Projekte = [
      Seitenwechsel erhalten. Die App verfügt über einen nutzerbasierten
      Login, der mit einem Backend verbunden ist. Papaparse, Vue-Axios und
      Vue-Router werden für die Entwicklung verwendet.`,
-    "../Csv.avif",
+    "Csv.avif",
     "https://csv2.netlify.app",
     [
       {
@@ -42,7 +44,7 @@ const Projekte = [
   new Projekt(
     "Kurse Buchen",
     "Das Projekt Kurse Buchen ist ein Buchungssystem für Hochschulen. Schüler können sich registrieren und Kurse buchen oder filtern. Beim Öffnen der App werden alle Kurse angezeigt. Das Filtern der Kurse ist ebenfalls möglich. Einen Kurs buchen kann man nur, wenn man sich eingeloggt hat. Nach der Buchung eines Kurses kann dieser auch wieder storniert werden. Das ergänzende Stück dazu ist eine C#-Anwendung, mit der man Kurse, Räume und Lehrkräfte hinzufügen kann.",
-    "../KursBuchen.png",
+    "KursBuchen.png",
     "http://lorenzo.infinityfreeapp.com/",
     [
       {
@@ -56,7 +58,7 @@ const Projekte = [
     "Schornsteinfeger Wochenplaner(SFWP)",
 
     "Der Wochenplan wird derzeit im elterlichen Betrieb verwendet, um Termine für eine 7-Tage-Woche zu speichern. Die App wurde für die Nutzung auf Mobilgeräten entwickelt. Beim Öffnen der App sieht der Nutzer eine Liste der Tage von Montag bis Samstag. Durch einen Klick auf einen dieser Tage werden die jeweiligen Termine angezeigt. Die App ermöglicht das Erstellen, Bearbeiten und Löschen von Terminen. Der Aufbau und Stil sind schlicht gehalten, und alle Bedienelemente sind nahe beieinander platziert, um die Bedienung mit einer Hand zu erleichtern.",
-    "../SFWP.jpg",
+    "SFWP.jpg",
 
     "https://schornsteinfeger-wochenplaner.netlify.app",
 
@@ -72,7 +74,7 @@ const Projekte = [
     "Todoliste",
 
     "Die Todoliste ist sehr einfach gehalten damit man es auch am handy verwenden kann und es traotzdem übersichtlich ist .Es ist möglich ein Todos hinzufügen und löschen. die Todoliste wurde mit ObjektOrientirung Erstelt   ",
-    "../Todoliste.jpg",
+    "Todoliste.jpg",
 
     "https://todoliste-lorenzo-rodorigo.netlify.app",
     [
@@ -87,7 +89,7 @@ const Projekte = [
     "Webseite Für Sylvia Rodorigo",
 
     "Eine Webseite für den Schornsteinfegerbetrieb von Sylvia Rodorigo präsentiert alle Dienstleistungen, die von Sylvia Rodorigo angeboten werden, sowie Kontaktinformationen. Durch Klicken auf die jeweiligen Buttons im Header wird der Besucher zu den einzelnen Abschnitten der Webseite weitergeleitet. Die Webseite ist zudem für die mobile Nutzung optimiert.",
-    "../SiviWeb.png",
+    "SiviWeb.png",
 
     "https://clinquant-croissant-d8a253.netlify.app",
     [
@@ -103,7 +105,7 @@ const Projekte = [
 
     `
 Das Omnifood-Projekt ist eine Webseite, die eine App zur Mahlzeitenplanung vorstellt. Die Webseite umfasst Abschnitte für Kundenbewertungen, Informationen zur Funktionsweise der App, Preise und ein Anmeldeformular. Die Webseite ist für die Nutzung auf mobilen Geräten optimiert.`,
-    "../Omnifod.png",
+    "Omnifod.png",
 
     "https://omnifood-lorenzo-rodorigo.netlify.app",
     [
@@ -118,7 +120,7 @@ Das Omnifood-Projekt ist eine Webseite, die eine App zur Mahlzeitenplanung vorst
     "OneForkify",
 
     "OneForkify ist eine Rezepte-App, mit der Benutzer nach Rezepten suchen und diese hinzufügen können. Es ist auch möglich, eine bestimmte Anzahl von Personen anzugeben, nach der die Rezeptmenge berechnet wird. Außerdem können Benutzer Rezepte zu Lesezeichen hinzufügen, um sie später leicht aufrufen zu können. Die App verfügt auch über ein Backend, von dem aus die Rezepte geladen werden. In diesem Projekt wird Parcel verwendet, ein Webapplication Bundler, und eine virtuelle DOM wird generiert, um das Projekt mit Vanilla JavaScript zu erstellen. Zusätzlich wird Ajax verwendet, um Requests an das Backend zu senden.",
-    "../OneForkify.png",
+    "OneForkify.png",
 
     "https://forkify-rezepte-finder-lorenzo-rodorigo.netlify.app",
     [
@@ -133,7 +135,7 @@ Das Omnifood-Projekt ist eine Webseite, die eine App zur Mahlzeitenplanung vorst
     "Mapty",
 
     "Mapty ist eine interaktive Karte, mit der man Trainingsorte speichern kann. Sobald man auf die Karte klickt, öffnet sich links ein Formular. In diesem Formular muss man auswählen, ob man mit dem Fahrrad gefahren ist oder gelaufen ist. Je nachdem, was man wählt, werden die Schritte pro Minute oder die gefahrenen Meter abgefragt. Man muss außerdem die Distanz und die Dauer angeben. Zum Schluss drückt man auf Enter und die Daten werden gespeichert. Außerdem wird beim Öffnen der App die Karte zum aktuellen Standort gezoomt. Mapty wurde mit der Leaflet-Bibliothek, JavaScript Object Notation und der Browser-Geolokalisierungs-API erstellt.",
-    "../Mapty.png",
+    "Mapty.png",
 
     "https://mapty-lorenzo-rodorigo.netlify.app",
     [
@@ -453,14 +455,14 @@ Das Omnifood-Projekt ist eine Webseite, die eine App zur Mahlzeitenplanung vorst
           </div>
         </div>
         <div class="img-rapper">
-          <img :src="IMG" />
+          <img :src="SetImg(IMG)" />
         </div>
       </div>
       <div
         v-else
         class="rapper-Alle-infos">
         <div class="img-rapper">
-          <img :src="IMG" />
+          <img :src="SetImg(IMG)" />
         </div>
         <div class="info-rapper">
           <div class="Beschreibung">
@@ -774,9 +776,9 @@ Das Omnifood-Projekt ist eine Webseite, die eine App zur Mahlzeitenplanung vorst
   border-radius: 15px
   gap: 2rem
 .Projekt-bg1
-  background: url("../Projekt-bg1.svg") no-repeat center
+  background: url("./assets/Projekt-bg1.svg") no-repeat center
   background-size: cover
 .Projekt-bg2
-  background: url("../Projekt-bg2.svg") no-repeat center
+  background: url("./assets/Projekt-bg2.svg") no-repeat center
   background-size: cover
 </style>
