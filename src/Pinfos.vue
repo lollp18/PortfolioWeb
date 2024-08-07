@@ -1,7 +1,11 @@
 <script setup>
+import Tech from "./Tech.vue"
 function SetImg(Img) {
   return new URL(`./assets/${Img}`, import.meta.url).href
 }
+
+const TopSkills = ["vue", "nodejs", "mongodb"]
+const Skills = ["nextjs", "php", "sql","html","css","pina","sass",]
 </script>
 <template>
   <section class="Projekt-continer kontakdaten">
@@ -144,43 +148,32 @@ c0.39062-0.39062,1.02344-0.39062,1.41406,0s0.39062,1.02344,0,1.41406l-25,25C19.5
                   </g>
                 </svg>
 
-                <h2>Festanstehlung Als Frontend Developer</h2>
+                <h2>Full-Stack Developer</h2>
               </div>
             </div>
           </div>
-
+     <div>
           <table>
             <thead>
               <tr>
-                <td style="border-right: 1px solid #fff">
-                  <ion-icon name="person-add-sharp"></ion-icon>
-                </td>
-                <td style="border-left: 1px solid #fff">
-                  <ion-icon name="person-remove-sharp"></ion-icon>
-                </td>
+                Top Skills
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td style="border-right: 1px solid #fff">Kreativ</td>
-                <td style="border-left: 1px solid #fff">Rechtschreibung</td>
-              </tr>
-              <tr>
-                <td style="border-right: 1px solid #fff">
-                  Durchhalte Vermögen
-                </td>
-                <td style="border-left: 1px solid #fff">etwas Langsam</td>
-              </tr>
-              <tr>
-                <td style="border-right: 1px solid #fff">Lernbereitschaft</td>
-                <td style="border-left: 1px solid #fff">etwas Verträumt</td>
-              </tr>
-              <tr>
-                <td style="border-right: 1px solid #fff">geduldig</td>
-                <td style="border-left: 1px solid #fff"></td>
-              </tr>
+            <tbody style="padding: 1rem; background-color: white; margin: 1rem; border-radius: 11px;">
+              <Tech :Technologien="TopSkills" />
             </tbody>
           </table>
+          <table>
+            <thead>
+              <tr>
+            Skills
+              </tr>
+            </thead>
+            <tbody style="padding: 1rem; background-color: white; margin: 1rem; border-radius: 11px;">
+              <Tech :Technologien="Skills" />
+            </tbody>
+          </table>
+        </div>
           <div
             style="
               display: flex;

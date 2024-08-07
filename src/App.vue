@@ -1,5 +1,4 @@
 <script setup>
-import matrix from "./matrix.vue"
 import AlleProjekte from "./AlleProjekte.vue"
 import Bescheinigung from "./Bescheinigung.vue"
 import ITA from "./ITA.vue"
@@ -7,21 +6,19 @@ import Pinfos from "./Pinfos.vue"
 </script>
 
 <template>
-  <matrix />
-
   <AlleProjekte />
 
   <Bescheinigung />
-
-  <ITA />
-
   <Pinfos />
-
+  <!-- <ITA /> -->
 </template>
 
 <style lang="sass">
 
 @import './style.sass'
+
+#app
+  background-color: #000
 
 .rapper-Alle-infos
   display: flex

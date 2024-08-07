@@ -21,7 +21,8 @@ function SetImg(Img) {
         :href="
           SetImg('The Complete JavaScript Course 2022 From Zero to Expert!.pdf')
         "
-        >The Complete JavaScript Course 2022 From Zero to Expert!</a>
+        >The Complete JavaScript Course 2022 From Zero to Expert!</a
+      >
 
       <a
         style="font-size: 1.5rem"
@@ -49,6 +50,6 @@ function SetImg(Img) {
   align-items: center
   justify-content: center
   border-bottom: 1px solid $SecondaryColor
-  background-color: $MainColor
+  background-color: #000
   padding: 1.5rem
 </style>
