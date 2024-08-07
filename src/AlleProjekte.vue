@@ -43,6 +43,7 @@ const Projekte = [
     ["html", "vue", "pina", "sass", "nodejs", "mongodb"]
   ),
   /*  new Projekt(
+ /* new Projekt(
     "Kurse Buchen",
     "Das Projekt Kurse Buchen ist ein Buchungssystem für Hochschulen. Schüler können sich registrieren und Kurse buchen oder filtern. Beim Öffnen der App werden alle Kurse angezeigt. Das Filtern der Kurse ist ebenfalls möglich. Einen Kurs buchen kann man nur, wenn man sich eingeloggt hat. Nach der Buchung eines Kurses kann dieser auch wieder storniert werden. Das ergänzende Stück dazu ist eine C#-Anwendung, mit der man Kurse, Räume und Lehrkräfte hinzufügen kann.",
     "KursBuchen.png",
