@@ -5,10 +5,12 @@ function SetImg(Img) {
 }
 
 const TopSkills = ["vue", "nodejs", "mongodb"]
-const Skills = ["nextjs", "php", "sql","html","css","pina","sass",]
+const Skills = ["nextjs", "php", "sql", "html", "css", "pina", "sass"]
 </script>
 <template>
-  <section class="Projekt-continer kontakdaten">
+  <section
+    id="Kontaktdaten&about"
+    class="Projekt-continer kontakdaten">
     <h1 style="margin: 0">Kontaktdaten & about</h1>
     <div
       style="
@@ -152,28 +154,40 @@ c0.39062-0.39062,1.02344-0.39062,1.41406,0s0.39062,1.02344,0,1.41406l-25,25C19.5
               </div>
             </div>
           </div>
-     <div>
-          <table>
-            <thead>
-              <tr>
-                Top Skills
-              </tr>
-            </thead>
-            <tbody style="padding: 1rem; background-color: white; margin: 1rem; border-radius: 11px;">
-              <Tech :Technologien="TopSkills" />
-            </tbody>
-          </table>
-          <table>
-            <thead>
-              <tr>
-            Skills
-              </tr>
-            </thead>
-            <tbody style="padding: 1rem; background-color: white; margin: 1rem; border-radius: 11px;">
-              <Tech :Technologien="Skills" />
-            </tbody>
-          </table>
-        </div>
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  Top Skills
+                </tr>
+              </thead>
+              <tbody
+                style="
+                  padding: 1rem;
+                  background-color: white;
+                  margin: 1rem;
+                  border-radius: 11px;
+                ">
+                <Tech :Technologien="TopSkills" />
+              </tbody>
+            </table>
+            <table>
+              <thead>
+                <tr>
+                  Skills
+                </tr>
+              </thead>
+              <tbody
+                style="
+                  padding: 1rem;
+                  background-color: white;
+                  margin: 1rem;
+                  border-radius: 11px;
+                ">
+                <Tech :Technologien="Skills" />
+              </tbody>
+            </table>
+          </div>
           <div
             style="
               display: flex;
@@ -208,6 +222,8 @@ c0.39062-0.39062,1.02344-0.39062,1.41406,0s0.39062,1.02344,0,1.41406l-25,25C19.5
   background: url(./assets/Kontakdaten-bg.svg) no-repeat center
   background-size: cover
   color: #fff
+  @include width
+  margin-top: 2rem
   margin-bottom: 2rem
   h1
     border-bottom-color: #fff

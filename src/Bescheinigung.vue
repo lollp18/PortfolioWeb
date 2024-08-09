@@ -4,7 +4,9 @@ function SetImg(Img) {
 }
 </script>
 <template lang="">
-  <section class="Bescheinigingen ITA-bg">
+  <section
+    id="Bescheinigung"
+    class="Bescheinigingen ITA-bg">
     <h1>Bescheinigungen</h1>
     <div
       style="
@@ -46,6 +48,7 @@ function SetImg(Img) {
   display: flex
   @include width
   @include B-radius
+  margin-top: 2rem
   flex-direction: column
   align-items: center
   justify-content: center

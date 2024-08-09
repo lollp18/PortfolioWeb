@@ -1,11 +1,35 @@
 <script setup>
+import Header from "./Header.vue"
 import AlleProjekte from "./AlleProjekte.vue"
 import Bescheinigung from "./Bescheinigung.vue"
-import ITA from "./ITA.vue"
 import Pinfos from "./Pinfos.vue"
 </script>
-
+<script>
+export default {
+  data() {
+    return {
+      menüState: false,
+    }
+  },
+  methods: {
+    toggelMenü() {
+      this.menüState ? (this.menüState = false) : (this.menüState = true)
+    },
+  },
+}
+</script>
 <template>
+  <button
+    @click="toggelMenü()"
+    class="menuBtn">
+    <ion-icon name="reorder-three-outline"></ion-icon>
+  </button>
+  <Transition name="slide-fade">
+    <Header
+      v-if="menüState"
+      :menüState="menüState"
+      @setmenüState="menüState = false" />
+  </Transition>
   <AlleProjekte />
 
   <Bescheinigung />
@@ -17,6 +41,30 @@ import Pinfos from "./Pinfos.vue"
 
 @import './style.sass'
 
+.slide-fade-enter-active
+  transition: all 0.4s ease-out
+
+.slide-fade-leave-active
+  transition: all 0.6s cubic-bezier(1, 0.5, 0.8, 1)
+
+.slide-fade-enter-from,
+.slide-fade-leave-to
+  transform: translateX(-40rem)
+  opacity: 0
+
+.menuBtn
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 3px
+  top: 20px
+  left: 20px
+  position: fixed
+  border-radius: 50%
+  border: 1px solid $brown
+  z-index: 10
+  background-color: $MainColor
+  box-shadow: -3px 4px $brown
 #app
   background-color: #000
 
